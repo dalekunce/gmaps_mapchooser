@@ -27,11 +27,23 @@
             }
             #maptypes li {
                 display:none;
-                padding: 1px;
                 height:64px;
                 width:64px;
                 border: 1px solid #202020;
                 background-color: #fff;
+            }
+            #maptypes .title {
+                top: 0px;
+                right: 0px;
+                display: block;
+                width: 64px;
+                border: 1px solid #000;
+                background-color: #E2E2E2;
+                color: #000;
+                position: absolute;
+                font: bold 13px Veranda, sans-serif;
+                margin: 0;
+                text-align: center;
             }
             #maptypes li.active {
                 display:block;
@@ -182,7 +194,7 @@
     
     <body>
         <div id="maptypes">
-            <ul></ul>
+            <p class="title">Map</p><ul></ul>
         </div>
         <div id="map-canvas" />
     </body>
